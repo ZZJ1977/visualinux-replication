@@ -1,0 +1,74 @@
+{
+  "demo_mapping": {
+    "name": "demo_mapping",
+    "pool": {
+      "boxes": {
+        "0xff11000003a6da80:mm_struct": {
+          "key": "0xff11000003a6da80:mm_struct",
+          "type": "mm_struct",
+          "addr": "0xff11000003a6da80",
+          "label": "parent address space",
+          "absts": {
+            "default": {
+              "parent": null,
+              "members": {
+                "region": {
+                  "class": "link",
+                  "type": "DIRECT",
+                  "target": "0xff11000005e49698:vm_area_struct"
+                }
+              },
+              "distilled": true
+            }
+          },
+          "parent": null
+        },
+        "0xff11000005e49698:vm_area_struct": {
+          "key": "0xff11000005e49698:vm_area_struct",
+          "type": "vm_area_struct",
+          "addr": "0xff11000005e49698",
+          "label": "one private page",
+          "absts": {
+            "default": {
+              "parent": null,
+              "members": {
+                "vm_start": {
+                  "class": "text",
+                  "type": "long",
+                  "size": 16,
+                  "value": "0x50000000"
+                },
+                "vm_end": {
+                  "class": "text",
+                  "type": "long",
+                  "size": 16,
+                  "value": "0x50001000"
+                },
+                "vm_flags": {
+                  "class": "text",
+                  "type": "long",
+                  "size": 16,
+                  "value": "0x100071"
+                },
+                "can_write": {
+                  "class": "text",
+                  "type": "bool",
+                  "size": 3,
+                  "value": "false"
+                }
+              },
+              "distilled": true
+            }
+          },
+          "parent": null
+        }
+      },
+      "containers": {}
+    },
+    "plot": [
+      "0xff11000003a6da80:mm_struct"
+    ],
+    "init_vql": "",
+    "stat": 1
+  }
+}

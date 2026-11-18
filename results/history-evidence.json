@@ -1,0 +1,476 @@
+{
+  "1": {
+    "2.6.11": {
+      "file": "include/linux/sched.h",
+      "pattern": "struct list_head children;",
+      "hits": [
+        {
+          "line": 584,
+          "text": "struct list_head children;\t/* list of my children */"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/sched.h",
+      "pattern": "struct list_head\\s+children;",
+      "hits": [
+        {
+          "line": 989,
+          "text": "struct list_head\t\tchildren;"
+        }
+      ]
+    }
+  },
+  "2": {
+    "2.6.11": {
+      "file": "kernel/pid.c",
+      "pattern": "static struct hlist_head \\*pid_hash",
+      "hits": [
+        {
+          "line": 31,
+          "text": "static struct hlist_head *pid_hash[PIDTYPE_MAX];"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/pid_namespace.h",
+      "pattern": "struct idr idr;",
+      "hits": [
+        {
+          "line": 20,
+          "text": "struct idr idr;"
+        }
+      ]
+    }
+  },
+  "3": {
+    "2.6.11": {
+      "file": "include/linux/irq.h",
+      "pattern": "extern irq_desc_t irq_desc",
+      "hits": [
+        {
+          "line": 72,
+          "text": "extern irq_desc_t irq_desc [NR_IRQS];"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "kernel/irq/irqdesc.c",
+      "pattern": "RADIX_TREE\\(irq_desc_tree,",
+      "hits": [
+        {
+          "line": 347,
+          "text": "static RADIX_TREE(irq_desc_tree, GFP_KERNEL);"
+        }
+      ]
+    }
+  },
+  "4": {
+    "2.6.11": {
+      "file": "kernel/timer.c",
+      "pattern": "struct tvec_s tv[2-5];|tvec_t tv2;",
+      "hits": [
+        {
+          "line": 71,
+          "text": "tvec_t tv2;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "kernel/time/timer.c",
+      "pattern": "struct hlist_head\\s+vectors\\[WHEEL_SIZE\\]",
+      "hits": [
+        {
+          "line": 213,
+          "text": "struct hlist_head\tvectors[WHEEL_SIZE];"
+        }
+      ]
+    }
+  },
+  "5": {
+    "2.6.11": {
+      "file": "kernel/sched.c",
+      "pattern": "prio_array_t \\*active, \\*expired",
+      "hits": [
+        {
+          "line": 223,
+          "text": "prio_array_t *active, *expired, arrays[2];"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "kernel/sched/sched.h",
+      "pattern": "struct rb_root_cached\\s+tasks_timeline;",
+      "hits": [
+        {
+          "line": 568,
+          "text": "struct rb_root_cached\ttasks_timeline;"
+        }
+      ]
+    }
+  },
+  "6": {
+    "2.6.11": {
+      "file": "include/linux/mmzone.h",
+      "pattern": "struct list_head\\s+free_list;",
+      "hits": [
+        {
+          "line": 24,
+          "text": "struct list_head\tfree_list;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/mmzone.h",
+      "pattern": "struct list_head\\s+free_list\\[MIGRATE_TYPES\\]",
+      "hits": [
+        {
+          "line": 106,
+          "text": "struct list_head\tfree_list[MIGRATE_TYPES];"
+        }
+      ]
+    }
+  },
+  "7": {
+    "2.6.11": {
+      "file": "mm/slab.c",
+      "pattern": "struct list_head\\s+slabs_partial;",
+      "hits": [
+        {
+          "line": 274,
+          "text": "struct list_head\tslabs_partial;\t/* partial list first, better asm code */"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/slub_def.h",
+      "pattern": "struct kmem_cache_cpu __percpu \\*cpu_slab",
+      "hits": [
+        {
+          "line": 91,
+          "text": "struct kmem_cache_cpu __percpu *cpu_slab;"
+        }
+      ]
+    }
+  },
+  "8": {
+    "2.6.11": {
+      "file": "include/linux/sched.h",
+      "pattern": "struct rb_root mm_rb;",
+      "hits": [
+        {
+          "line": 209,
+          "text": "struct rb_root mm_rb;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/mm_types.h",
+      "pattern": "struct maple_tree mm_mt;",
+      "hits": [
+        {
+          "line": 514,
+          "text": "struct maple_tree mm_mt;"
+        }
+      ]
+    }
+  },
+  "9": {
+    "2.6.11": {
+      "file": "include/linux/sched.h",
+      "pattern": "struct sigpending pending;",
+      "hits": [
+        {
+          "line": 636,
+          "text": "struct sigpending pending;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/sched.h",
+      "pattern": "struct sigpending\\s+pending;",
+      "hits": [
+        {
+          "line": 1110,
+          "text": "struct sigpending\t\tpending;"
+        }
+      ]
+    }
+  },
+  "10": {
+    "2.6.11": {
+      "file": "include/linux/file.h",
+      "pattern": "struct file \\*\\* *fd;|struct file \\*\\* fd;",
+      "hits": [
+        {
+          "line": 28,
+          "text": "struct file ** fd;      /* current fd array */"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/fdtable.h",
+      "pattern": "struct fdtable __rcu \\*fdt;",
+      "hits": [
+        {
+          "line": 57,
+          "text": "struct fdtable __rcu *fdt;"
+        }
+      ]
+    }
+  },
+  "11": {
+    "2.6.11": {
+      "file": "include/linux/kobject.h",
+      "pattern": "struct dentry\\s+\\* *dentry;",
+      "hits": [
+        {
+          "line": 42,
+          "text": "struct dentry\t\t* dentry;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/kobject.h",
+      "pattern": "struct kernfs_node\\s+\\*sd;",
+      "hits": [
+        {
+          "line": 70,
+          "text": "struct kernfs_node\t*sd; /* sysfs directory entry */"
+        }
+      ]
+    }
+  },
+  "12": {
+    "2.6.11": {
+      "file": "include/linux/fs.h",
+      "pattern": "struct gendisk \\*\\s*bd_disk;",
+      "hits": [
+        {
+          "line": 374,
+          "text": "struct gendisk *\tbd_disk;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/blk_types.h",
+      "pattern": "struct request_queue \\*\\s*bd_queue;",
+      "hits": [
+        {
+          "line": 59,
+          "text": "struct request_queue *\tbd_queue;"
+        }
+      ]
+    }
+  },
+  "13": {
+    "2.6.11": {
+      "file": "include/linux/fs.h",
+      "pattern": "struct radix_tree_root\\s+page_tree;",
+      "hits": [
+        {
+          "line": 337,
+          "text": "struct radix_tree_root\tpage_tree;\t/* radix tree of all pages */"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/fs.h",
+      "pattern": "struct xarray\\s+i_pages;",
+      "hits": [
+        {
+          "line": 426,
+          "text": "struct xarray\t\ti_pages;"
+        }
+      ]
+    }
+  },
+  "14": {
+    "2.6.11": {
+      "file": "include/linux/fs.h",
+      "pattern": "struct prio_tree_root\\s+i_mmap;",
+      "hits": [
+        {
+          "line": 340,
+          "text": "struct prio_tree_root\ti_mmap;\t\t/* tree of private and shared mappings */"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/fs.h",
+      "pattern": "struct rb_root_cached\\s+i_mmap;",
+      "hits": [
+        {
+          "line": 434,
+          "text": "struct rb_root_cached\ti_mmap;"
+        }
+      ]
+    }
+  },
+  "15": {
+    "2.6.11": {
+      "file": "include/linux/rmap.h",
+      "pattern": "struct list_head\\s+head;",
+      "hits": [
+        {
+          "line": 29,
+          "text": "struct list_head head;\t/* List of private \"related\" vmas */"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/rmap.h",
+      "pattern": "struct rb_root_cached rb_root;",
+      "hits": [
+        {
+          "line": 66,
+          "text": "struct rb_root_cached rb_root;"
+        }
+      ]
+    }
+  },
+  "16": {
+    "2.6.11": {
+      "file": "include/linux/swap.h",
+      "pattern": "^\\s*int pages;",
+      "hits": [
+        {
+          "line": 136,
+          "text": "int pages;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/swap.h",
+      "pattern": "unsigned int pages;",
+      "hits": [
+        {
+          "line": 287,
+          "text": "unsigned int pages;\t\t/* total of usable pages of swap */"
+        }
+      ]
+    }
+  },
+  "17": {
+    "2.6.11": {
+      "file": "ipc/util.h",
+      "pattern": "struct ipc_id_ary\\s*\\*\\s*entries;",
+      "hits": [
+        {
+          "line": 30,
+          "text": "struct ipc_id_ary* entries;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/ipc_namespace.h",
+      "pattern": "struct idr ipcs_idr;",
+      "hits": [
+        {
+          "line": 22,
+          "text": "struct idr ipcs_idr;"
+        }
+      ]
+    }
+  },
+  "18": {
+    "2.6.11": {
+      "file": "ipc/util.h",
+      "pattern": "struct ipc_id_ary\\s*\\*\\s*entries;",
+      "hits": [
+        {
+          "line": 30,
+          "text": "struct ipc_id_ary* entries;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/ipc_namespace.h",
+      "pattern": "struct idr ipcs_idr;",
+      "hits": [
+        {
+          "line": 22,
+          "text": "struct idr ipcs_idr;"
+        }
+      ]
+    }
+  },
+  "19": {
+    "2.6.11": {
+      "file": "kernel/workqueue.c",
+      "pattern": "struct cpu_workqueue_struct",
+      "hits": [
+        {
+          "line": 38,
+          "text": "struct cpu_workqueue_struct {"
+        },
+        {
+          "line": 60,
+          "text": "struct cpu_workqueue_struct cpu_wq[NR_CPUS];"
+        },
+        {
+          "line": 77,
+          "text": "static void __queue_work(struct cpu_workqueue_struct *cwq,"
+        },
+        {
+          "line": 145,
+          "text": "static inline void run_workqueue(struct cpu_workqueue_struct *cwq)"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "kernel/workqueue.c",
+      "pattern": "struct pool_workqueue \\{",
+      "hits": [
+        {
+          "line": 201,
+          "text": "struct pool_workqueue {"
+        }
+      ]
+    }
+  },
+  "20": {
+    "2.6.11": {
+      "file": "include/linux/fs.h",
+      "pattern": "struct dentry\\s+\\*f_dentry;",
+      "hits": [
+        {
+          "line": 578,
+          "text": "struct dentry\t\t*f_dentry;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/linux/fs.h",
+      "pattern": "struct path\\s+f_path;",
+      "hits": [
+        {
+          "line": 946,
+          "text": "struct path\t\tf_path;"
+        }
+      ]
+    }
+  },
+  "21": {
+    "2.6.11": {
+      "file": "include/net/sock.h",
+      "pattern": "struct sk_buff_head\\s+sk_receive_queue;",
+      "hits": [
+        {
+          "line": 205,
+          "text": "struct sk_buff_head\tsk_receive_queue;"
+        }
+      ]
+    },
+    "6.1.25": {
+      "file": "include/net/sock.h",
+      "pattern": "struct sk_buff_head\\s+sk_receive_queue;",
+      "hits": [
+        {
+          "line": 402,
+          "text": "struct sk_buff_head\tsk_receive_queue;"
+        }
+      ]
+    }
+  }
+}

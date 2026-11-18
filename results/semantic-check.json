@@ -1,0 +1,1100 @@
+[
+  {
+    "trial": 1,
+    "view": "textbook_01_task_children",
+    "raw": "01_process_parenthood-trial1.json",
+    "roots": [
+      "0xffffffff8281aa40:task_struct"
+    ],
+    "boxes": 70,
+    "containers": 70,
+    "facts": {
+      "tasks": 70,
+      "children_of_init": []
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_02_pid_namespace",
+    "raw": "02_pidhash-trial1.json",
+    "roots": [
+      "0xffffffff82861fa0:pid_namespace"
+    ],
+    "boxes": 513,
+    "containers": 366,
+    "facts": {
+      "namespace_level": 0,
+      "pid_values": 73,
+      "serial_sleep_pids_present": []
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_03_idt",
+    "raw": "03_irq_desc-trial1.json",
+    "roots": [
+      "0xffffffff8294a900:XArray"
+    ],
+    "boxes": 56,
+    "containers": 1,
+    "facts": {
+      "irq_numbers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "irqaction_objects": 8
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_05_dyntimer",
+    "raw": "05_timing-trial1.json",
+    "roots": [
+      "0xff1100003ec1bb40:timer_base",
+      "0xff1100003ec1cdc0:timer_base"
+    ],
+    "boxes": 51,
+    "containers": 19,
+    "facts": {
+      "timer_bases_cpu0": 2,
+      "timer_list_objects": 16
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_06_cfs_runqueue",
+    "raw": "06_scheduling-trial1.json",
+    "roots": [
+      "0xff1100003ec2a200:cfs_rq"
+    ],
+    "boxes": 14,
+    "containers": 2,
+    "facts": {
+      "nr_running": 7,
+      "tasks_in_tree": 6
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_07_buddy_system",
+    "raw": "07_buddy_system-trial1.json",
+    "roots": [
+      "0xff1100003ffdc000:pglist_data"
+    ],
+    "boxes": 260,
+    "containers": 44,
+    "facts": {
+      "nr_zones": 2,
+      "zone_slots": [
+        "DMA",
+        "DMA32",
+        "Normal",
+        "Movable"
+      ],
+      "free_areas": 44
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_0809_kmem_cache_examples",
+    "raw": "08-09_slab-trial1.json",
+    "roots": [
+      "0xff11000003838040:kmem_cache",
+      "0xff110000038490c0:kmem_cache",
+      "0xff11000003a7a040:kmem_cache",
+      "0xff11000003ab81c0:kmem_cache"
+    ],
+    "boxes": 16,
+    "containers": 4,
+    "facts": {
+      "cache_names": [
+        "kmem_cache",
+        "task_struct",
+        "vm_area_struct",
+        "inode_cache"
+      ],
+      "cpu_caches": 4
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_10_task_mm_mt",
+    "raw": "10_addrspace-trial1.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 107,
+    "containers": 7,
+    "facts": {
+      "VMA_count": 13,
+      "vm_start_examples": [
+        "0x1000000",
+        "0x1002000",
+        "0x100d000"
+      ]
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_11_task_signal",
+    "raw": "11_signals-trial1.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 143,
+    "containers": 3,
+    "facts": {
+      "pending_signal_numbers": [
+        "10",
+        "12",
+        "12"
+      ]
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_13_fd_array",
+    "raw": "13_fd_array-trial1.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 29,
+    "containers": 1,
+    "facts": {
+      "socket_states": [
+        "SS_CONNECTED",
+        "SS_CONNECTED",
+        "SS_UNCONNECTED",
+        "SS_CONNECTED",
+        "SS_CONNECTED"
+      ]
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_14_kernfs_example",
+    "raw": "14_kernfs-trial1.json",
+    "roots": [
+      "0xff11000003a47d28:kernfs_node"
+    ],
+    "boxes": 126,
+    "containers": 246,
+    "facts": {
+      "found_kernfs_nodes": [
+        "dev",
+        "block",
+        "char"
+      ],
+      "source_vcl": "14_kernfs"
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_15_bio_example",
+    "raw": "15_bio-trial1.json",
+    "roots": [
+      "0xffffffff82989e70:List"
+    ],
+    "boxes": 40,
+    "containers": 2,
+    "facts": {
+      "disk_names": [
+        "sda"
+      ],
+      "boot_device": "sda"
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_16_file_pagecache",
+    "raw": "16_pagecache-trial1.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 159,
+    "containers": 8,
+    "facts": {
+      "cached_pages_per_mapping": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        125
+      ]
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_17_file_mapping",
+    "raw": "17_file_mapping-trial1.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 21,
+    "containers": 8,
+    "facts": {
+      "VMA_flags": [
+        "VM_READ\nVM_SHARED\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_MAYSHARE",
+        "VM_READ\nVM_WRITE\nVM_SHARED\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_MAYSHARE",
+        "VM_READ\nVM_WRITE\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_ACCOUNT",
+        "VM_WRITE\nVM_SHARED\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_MAYSHARE"
+      ]
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_18_anon_rev",
+    "raw": "18_anon_rev-trial1.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 163,
+    "containers": 10,
+    "facts": {
+      "anon_vma_active_counts": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_19_swap_area",
+    "raw": "19_swap_area-trial1.json",
+    "roots": [
+      "0xffffffff8329d340:Array"
+    ],
+    "boxes": 58,
+    "containers": 2,
+    "facts": {
+      "swap_pages": [
+        1022
+      ],
+      "proc_swaps_KiB": 4088
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_20_ipc_ids",
+    "raw": "20_ipc_ns-trial1.json",
+    "roots": [
+      "0xffffffff829e51e0:ipc_namespace"
+    ],
+    "boxes": 22,
+    "containers": 9,
+    "facts": {
+      "semaphore_arrays": 2,
+      "messages_per_queue": [
+        5
+      ]
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_04_mm_percpu_wq",
+    "raw": "04_workqueue-trial1.json",
+    "roots": [
+      "0xff11000003a30800:workqueue_struct"
+    ],
+    "boxes": 18,
+    "containers": 7,
+    "facts": {
+      "name": "mm_percpu_wq",
+      "pool_workqueues": 2,
+      "workers": 7
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_12_proc_vfs",
+    "raw": "12_proc_and_vfs-trial1.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 49,
+    "containers": 1,
+    "facts": {
+      "dentry_names": [
+        "console",
+        "dev",
+        "/",
+        "UNIX-STREAM",
+        "UNIX-STREAM",
+        "TCP",
+        "TCP",
+        "TCP",
+        "fmap_test.log",
+        "/"
+      ]
+    }
+  },
+  {
+    "trial": 1,
+    "view": "textbook_21_sockstack",
+    "raw": "21_socket-trial1.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 36,
+    "containers": 1,
+    "facts": {
+      "sk_buff_lengths": [
+        257,
+        257,
+        257,
+        5120,
+        5120
+      ]
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_01_task_children",
+    "raw": "01_process_parenthood-trial2.json",
+    "roots": [
+      "0xffffffff8281aa40:task_struct"
+    ],
+    "boxes": 70,
+    "containers": 70,
+    "facts": {
+      "tasks": 70,
+      "children_of_init": []
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_02_pid_namespace",
+    "raw": "02_pidhash-trial2.json",
+    "roots": [
+      "0xffffffff82861fa0:pid_namespace"
+    ],
+    "boxes": 513,
+    "containers": 366,
+    "facts": {
+      "namespace_level": 0,
+      "pid_values": 73,
+      "serial_sleep_pids_present": []
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_03_idt",
+    "raw": "03_irq_desc-trial2.json",
+    "roots": [
+      "0xffffffff8294a900:XArray"
+    ],
+    "boxes": 56,
+    "containers": 1,
+    "facts": {
+      "irq_numbers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "irqaction_objects": 8
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_05_dyntimer",
+    "raw": "05_timing-trial2.json",
+    "roots": [
+      "0xff1100003ec1bb40:timer_base",
+      "0xff1100003ec1cdc0:timer_base"
+    ],
+    "boxes": 51,
+    "containers": 19,
+    "facts": {
+      "timer_bases_cpu0": 2,
+      "timer_list_objects": 16
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_06_cfs_runqueue",
+    "raw": "06_scheduling-trial2.json",
+    "roots": [
+      "0xff1100003ec2a200:cfs_rq"
+    ],
+    "boxes": 14,
+    "containers": 2,
+    "facts": {
+      "nr_running": 7,
+      "tasks_in_tree": 6
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_07_buddy_system",
+    "raw": "07_buddy_system-trial2.json",
+    "roots": [
+      "0xff1100003ffdc000:pglist_data"
+    ],
+    "boxes": 260,
+    "containers": 44,
+    "facts": {
+      "nr_zones": 2,
+      "zone_slots": [
+        "DMA",
+        "DMA32",
+        "Normal",
+        "Movable"
+      ],
+      "free_areas": 44
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_0809_kmem_cache_examples",
+    "raw": "08-09_slab-trial2.json",
+    "roots": [
+      "0xff11000003838040:kmem_cache",
+      "0xff110000038490c0:kmem_cache",
+      "0xff11000003a7a040:kmem_cache",
+      "0xff11000003ab81c0:kmem_cache"
+    ],
+    "boxes": 16,
+    "containers": 4,
+    "facts": {
+      "cache_names": [
+        "kmem_cache",
+        "task_struct",
+        "vm_area_struct",
+        "inode_cache"
+      ],
+      "cpu_caches": 4
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_10_task_mm_mt",
+    "raw": "10_addrspace-trial2.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 107,
+    "containers": 7,
+    "facts": {
+      "VMA_count": 13,
+      "vm_start_examples": [
+        "0x1000000",
+        "0x1002000",
+        "0x100d000"
+      ]
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_11_task_signal",
+    "raw": "11_signals-trial2.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 143,
+    "containers": 3,
+    "facts": {
+      "pending_signal_numbers": [
+        "10",
+        "12",
+        "12"
+      ]
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_13_fd_array",
+    "raw": "13_fd_array-trial2.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 29,
+    "containers": 1,
+    "facts": {
+      "socket_states": [
+        "SS_CONNECTED",
+        "SS_CONNECTED",
+        "SS_UNCONNECTED",
+        "SS_CONNECTED",
+        "SS_CONNECTED"
+      ]
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_14_kernfs_example",
+    "raw": "14_kernfs-trial2.json",
+    "roots": [
+      "0xff11000003a47d28:kernfs_node"
+    ],
+    "boxes": 126,
+    "containers": 246,
+    "facts": {
+      "found_kernfs_nodes": [
+        "dev",
+        "block",
+        "char"
+      ],
+      "source_vcl": "14_kernfs"
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_15_bio_example",
+    "raw": "15_bio-trial2.json",
+    "roots": [
+      "0xffffffff82989e70:List"
+    ],
+    "boxes": 40,
+    "containers": 2,
+    "facts": {
+      "disk_names": [
+        "sda"
+      ],
+      "boot_device": "sda"
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_16_file_pagecache",
+    "raw": "16_pagecache-trial2.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 159,
+    "containers": 8,
+    "facts": {
+      "cached_pages_per_mapping": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        125
+      ]
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_17_file_mapping",
+    "raw": "17_file_mapping-trial2.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 21,
+    "containers": 8,
+    "facts": {
+      "VMA_flags": [
+        "VM_READ\nVM_SHARED\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_MAYSHARE",
+        "VM_READ\nVM_WRITE\nVM_SHARED\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_MAYSHARE",
+        "VM_READ\nVM_WRITE\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_ACCOUNT",
+        "VM_WRITE\nVM_SHARED\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_MAYSHARE"
+      ]
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_18_anon_rev",
+    "raw": "18_anon_rev-trial2.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 163,
+    "containers": 10,
+    "facts": {
+      "anon_vma_active_counts": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_19_swap_area",
+    "raw": "19_swap_area-trial2.json",
+    "roots": [
+      "0xffffffff8329d340:Array"
+    ],
+    "boxes": 58,
+    "containers": 2,
+    "facts": {
+      "swap_pages": [
+        1022
+      ],
+      "proc_swaps_KiB": 4088
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_20_ipc_ids",
+    "raw": "20_ipc_ns-trial2.json",
+    "roots": [
+      "0xffffffff829e51e0:ipc_namespace"
+    ],
+    "boxes": 22,
+    "containers": 9,
+    "facts": {
+      "semaphore_arrays": 2,
+      "messages_per_queue": [
+        5
+      ]
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_04_mm_percpu_wq",
+    "raw": "04_workqueue-trial2.json",
+    "roots": [
+      "0xff11000003a30800:workqueue_struct"
+    ],
+    "boxes": 18,
+    "containers": 7,
+    "facts": {
+      "name": "mm_percpu_wq",
+      "pool_workqueues": 2,
+      "workers": 7
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_12_proc_vfs",
+    "raw": "12_proc_and_vfs-trial2.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 49,
+    "containers": 1,
+    "facts": {
+      "dentry_names": [
+        "console",
+        "dev",
+        "/",
+        "UNIX-STREAM",
+        "UNIX-STREAM",
+        "TCP",
+        "TCP",
+        "TCP",
+        "fmap_test.log",
+        "/"
+      ]
+    }
+  },
+  {
+    "trial": 2,
+    "view": "textbook_21_sockstack",
+    "raw": "21_socket-trial2.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 36,
+    "containers": 1,
+    "facts": {
+      "sk_buff_lengths": [
+        257,
+        257,
+        257,
+        5120,
+        5120
+      ]
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_01_task_children",
+    "raw": "01_process_parenthood-trial3.json",
+    "roots": [
+      "0xffffffff8281aa40:task_struct"
+    ],
+    "boxes": 70,
+    "containers": 70,
+    "facts": {
+      "tasks": 70,
+      "children_of_init": []
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_02_pid_namespace",
+    "raw": "02_pidhash-trial3.json",
+    "roots": [
+      "0xffffffff82861fa0:pid_namespace"
+    ],
+    "boxes": 513,
+    "containers": 366,
+    "facts": {
+      "namespace_level": 0,
+      "pid_values": 73,
+      "serial_sleep_pids_present": []
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_03_idt",
+    "raw": "03_irq_desc-trial3.json",
+    "roots": [
+      "0xffffffff8294a900:XArray"
+    ],
+    "boxes": 56,
+    "containers": 1,
+    "facts": {
+      "irq_numbers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "irqaction_objects": 8
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_05_dyntimer",
+    "raw": "05_timing-trial3.json",
+    "roots": [
+      "0xff1100003ec1bb40:timer_base",
+      "0xff1100003ec1cdc0:timer_base"
+    ],
+    "boxes": 51,
+    "containers": 19,
+    "facts": {
+      "timer_bases_cpu0": 2,
+      "timer_list_objects": 16
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_06_cfs_runqueue",
+    "raw": "06_scheduling-trial3.json",
+    "roots": [
+      "0xff1100003ec2a200:cfs_rq"
+    ],
+    "boxes": 14,
+    "containers": 2,
+    "facts": {
+      "nr_running": 7,
+      "tasks_in_tree": 6
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_07_buddy_system",
+    "raw": "07_buddy_system-trial3.json",
+    "roots": [
+      "0xff1100003ffdc000:pglist_data"
+    ],
+    "boxes": 260,
+    "containers": 44,
+    "facts": {
+      "nr_zones": 2,
+      "zone_slots": [
+        "DMA",
+        "DMA32",
+        "Normal",
+        "Movable"
+      ],
+      "free_areas": 44
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_0809_kmem_cache_examples",
+    "raw": "08-09_slab-trial3.json",
+    "roots": [
+      "0xff11000003838040:kmem_cache",
+      "0xff110000038490c0:kmem_cache",
+      "0xff11000003a7a040:kmem_cache",
+      "0xff11000003ab81c0:kmem_cache"
+    ],
+    "boxes": 16,
+    "containers": 4,
+    "facts": {
+      "cache_names": [
+        "kmem_cache",
+        "task_struct",
+        "vm_area_struct",
+        "inode_cache"
+      ],
+      "cpu_caches": 4
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_10_task_mm_mt",
+    "raw": "10_addrspace-trial3.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 107,
+    "containers": 7,
+    "facts": {
+      "VMA_count": 13,
+      "vm_start_examples": [
+        "0x1000000",
+        "0x1002000",
+        "0x100d000"
+      ]
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_11_task_signal",
+    "raw": "11_signals-trial3.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 143,
+    "containers": 3,
+    "facts": {
+      "pending_signal_numbers": [
+        "10",
+        "12",
+        "12"
+      ]
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_13_fd_array",
+    "raw": "13_fd_array-trial3.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 29,
+    "containers": 1,
+    "facts": {
+      "socket_states": [
+        "SS_CONNECTED",
+        "SS_CONNECTED",
+        "SS_UNCONNECTED",
+        "SS_CONNECTED",
+        "SS_CONNECTED"
+      ]
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_14_kernfs_example",
+    "raw": "14_kernfs-trial3.json",
+    "roots": [
+      "0xff11000003a47d28:kernfs_node"
+    ],
+    "boxes": 126,
+    "containers": 246,
+    "facts": {
+      "found_kernfs_nodes": [
+        "dev",
+        "block",
+        "char"
+      ],
+      "source_vcl": "14_kernfs"
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_15_bio_example",
+    "raw": "15_bio-trial3.json",
+    "roots": [
+      "0xffffffff82989e70:List"
+    ],
+    "boxes": 40,
+    "containers": 2,
+    "facts": {
+      "disk_names": [
+        "sda"
+      ],
+      "boot_device": "sda"
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_16_file_pagecache",
+    "raw": "16_pagecache-trial3.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 159,
+    "containers": 8,
+    "facts": {
+      "cached_pages_per_mapping": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        125
+      ]
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_17_file_mapping",
+    "raw": "17_file_mapping-trial3.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 21,
+    "containers": 8,
+    "facts": {
+      "VMA_flags": [
+        "VM_READ\nVM_SHARED\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_MAYSHARE",
+        "VM_READ\nVM_WRITE\nVM_SHARED\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_MAYSHARE",
+        "VM_READ\nVM_WRITE\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_ACCOUNT",
+        "VM_WRITE\nVM_SHARED\nVM_MAYREAD\nVM_MAYWRITE\nVM_MAYEXEC\nVM_MAYSHARE"
+      ]
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_18_anon_rev",
+    "raw": "18_anon_rev-trial3.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 163,
+    "containers": 10,
+    "facts": {
+      "anon_vma_active_counts": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_19_swap_area",
+    "raw": "19_swap_area-trial3.json",
+    "roots": [
+      "0xffffffff8329d340:Array"
+    ],
+    "boxes": 58,
+    "containers": 2,
+    "facts": {
+      "swap_pages": [
+        1022
+      ],
+      "proc_swaps_KiB": 4088
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_20_ipc_ids",
+    "raw": "20_ipc_ns-trial3.json",
+    "roots": [
+      "0xffffffff829e51e0:ipc_namespace"
+    ],
+    "boxes": 22,
+    "containers": 9,
+    "facts": {
+      "semaphore_arrays": 2,
+      "messages_per_queue": [
+        5
+      ]
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_04_mm_percpu_wq",
+    "raw": "04_workqueue-trial3.json",
+    "roots": [
+      "0xff11000003a30800:workqueue_struct"
+    ],
+    "boxes": 18,
+    "containers": 7,
+    "facts": {
+      "name": "mm_percpu_wq",
+      "pool_workqueues": 2,
+      "workers": 7
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_12_proc_vfs",
+    "raw": "12_proc_and_vfs-trial3.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 49,
+    "containers": 1,
+    "facts": {
+      "dentry_names": [
+        "console",
+        "dev",
+        "/",
+        "UNIX-STREAM",
+        "UNIX-STREAM",
+        "TCP",
+        "TCP",
+        "TCP",
+        "fmap_test.log",
+        "/"
+      ]
+    }
+  },
+  {
+    "trial": 3,
+    "view": "textbook_21_sockstack",
+    "raw": "21_socket-trial3.json",
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "boxes": 36,
+    "containers": 1,
+    "facts": {
+      "sk_buff_lengths": [
+        257,
+        257,
+        257,
+        5120,
+        5120
+      ]
+    }
+  }
+]

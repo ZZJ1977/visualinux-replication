@@ -1,0 +1,166 @@
+{
+  "textbook_01_task_children": {
+    "roots": [
+      "0xffffffff8281aa40:task_struct"
+    ],
+    "nodes": 495,
+    "links": 69,
+    "screenshot": "images/textbook_01_task_children.png"
+  },
+  "textbook_02_pid_namespace": {
+    "roots": [
+      "0xffffffff82861fa0:pid_namespace"
+    ],
+    "nodes": 1319,
+    "links": 289,
+    "screenshot": "images/textbook_02_pid_namespace.png"
+  },
+  "textbook_03_idt": {
+    "roots": [
+      "0xffffffff8294a900:XArray"
+    ],
+    "nodes": 217,
+    "links": 24,
+    "screenshot": "images/textbook_03_idt.png"
+  },
+  "textbook_05_dyntimer": {
+    "roots": [
+      "0xff1100003ec1bb40:timer_base",
+      "0xff1100003ec1cdc0:timer_base"
+    ],
+    "nodes": 166,
+    "links": 16,
+    "screenshot": "images/textbook_05_dyntimer.png"
+  },
+  "textbook_06_cfs_runqueue": {
+    "roots": [
+      "0xff1100003ec2a200:cfs_rq"
+    ],
+    "nodes": 48,
+    "links": 6,
+    "screenshot": "images/textbook_06_cfs_runqueue.png"
+  },
+  "textbook_07_buddy_system": {
+    "roots": [
+      "0xff1100003ffdc000:pglist_data"
+    ],
+    "nodes": 471,
+    "links": 176,
+    "screenshot": "images/textbook_07_buddy_system.png"
+  },
+  "textbook_0809_kmem_cache_examples": {
+    "roots": [
+      "0xff11000003838040:kmem_cache",
+      "0xff110000038490c0:kmem_cache",
+      "0xff11000003a7a040:kmem_cache",
+      "0xff11000003ab81c0:kmem_cache"
+    ],
+    "nodes": 136,
+    "links": 12,
+    "screenshot": "images/textbook_0809_kmem_cache_examples.png"
+  },
+  "textbook_10_task_mm_mt": {
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "nodes": 229,
+    "links": 31,
+    "screenshot": "images/textbook_10_task_mm_mt.png"
+  },
+  "textbook_11_task_signal": {
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "nodes": 429,
+    "links": 5,
+    "screenshot": "images/textbook_11_task_signal.png"
+  },
+  "textbook_13_fd_array": {
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "nodes": 82,
+    "links": 14,
+    "screenshot": "images/textbook_13_fd_array.png"
+  },
+  "textbook_14_kernfs_example": {
+    "roots": [
+      "0xff11000003a47d28:kernfs_node"
+    ],
+    "nodes": 884,
+    "links": 8,
+    "screenshot": "images/textbook_14_kernfs_example.png"
+  },
+  "textbook_15_bio_example": {
+    "roots": [
+      "0xffffffff82989e70:List"
+    ],
+    "nodes": 207,
+    "links": 29,
+    "screenshot": "images/textbook_15_bio_example.png"
+  },
+  "textbook_16_file_pagecache": {
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "nodes": 236,
+    "links": 33,
+    "screenshot": "images/textbook_16_file_pagecache.png"
+  },
+  "textbook_17_file_mapping": {
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "nodes": 69,
+    "links": 15,
+    "screenshot": "images/textbook_17_file_mapping.png"
+  },
+  "textbook_18_anon_rev": {
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "nodes": 504,
+    "links": 85,
+    "screenshot": "images/textbook_18_anon_rev.png"
+  },
+  "textbook_19_swap_area": {
+    "roots": [
+      "0xffffffff8329d340:Array"
+    ],
+    "nodes": 157,
+    "links": 22,
+    "screenshot": "images/textbook_19_swap_area.png"
+  },
+  "textbook_20_ipc_ids": {
+    "roots": [
+      "0xffffffff829e51e0:ipc_namespace"
+    ],
+    "nodes": 88,
+    "links": 13,
+    "screenshot": "images/textbook_20_ipc_ids.png"
+  },
+  "textbook_04_mm_percpu_wq": {
+    "roots": [
+      "0xff11000003a30800:workqueue_struct"
+    ],
+    "nodes": 151,
+    "links": 18,
+    "screenshot": "images/textbook_04_mm_percpu_wq.png"
+  },
+  "textbook_12_proc_vfs": {
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "nodes": 170,
+    "links": 49,
+    "screenshot": "images/textbook_12_proc_vfs.png"
+  },
+  "textbook_21_sockstack": {
+    "roots": [
+      "0xff11000005e79840:task_struct"
+    ],
+    "nodes": 139,
+    "links": 15,
+    "screenshot": "images/textbook_21_sockstack.png"
+  }
+}

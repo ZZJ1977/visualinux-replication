@@ -1,0 +1,85 @@
+{
+  "kernel": "6.1.25",
+  "stages": [
+    {
+      "stage": 1,
+      "parent_pid": 1,
+      "children": [
+        {
+          "pid": 80,
+          "ppid": 1,
+          "comm": "demo-anchor"
+        }
+      ],
+      "socket_addr": "0xff11000005dc3040",
+      "socket_object_addr": "0xff110000058371c0",
+      "qlen": 0,
+      "packet_lengths": [],
+      "mapping_addr": "0xff11000005cdeb48",
+      "vm_start": "0x50000000",
+      "vm_end": "0x50001000",
+      "vm_flags": "0x100073",
+      "views": {
+        "process": "stage-1-process.json",
+        "queue": "stage-1-queue.json",
+        "mapping": "stage-1-mapping.json"
+      }
+    },
+    {
+      "stage": 2,
+      "parent_pid": 1,
+      "children": [
+        {
+          "pid": 80,
+          "ppid": 1,
+          "comm": "demo-anchor"
+        },
+        {
+          "pid": 81,
+          "ppid": 1,
+          "comm": "demo-new"
+        }
+      ],
+      "socket_addr": "0xff11000005dc3040",
+      "socket_object_addr": "0xff110000058371c0",
+      "qlen": 2,
+      "packet_lengths": [
+        5,
+        11
+      ],
+      "mapping_addr": "0xff11000005cdeb48",
+      "vm_start": "0x50000000",
+      "vm_end": "0x50001000",
+      "vm_flags": "0x100071",
+      "views": {
+        "process": "stage-2-process.json",
+        "queue": "stage-2-queue.json",
+        "mapping": "stage-2-mapping.json"
+      }
+    },
+    {
+      "stage": 3,
+      "parent_pid": 1,
+      "children": [
+        {
+          "pid": 80,
+          "ppid": 1,
+          "comm": "demo-anchor"
+        }
+      ],
+      "socket_addr": "0xff11000005dc3040",
+      "socket_object_addr": "0xff110000058371c0",
+      "qlen": 0,
+      "packet_lengths": [],
+      "mapping_addr": "0xff11000005cdeb48",
+      "vm_start": "0x50000000",
+      "vm_end": "0x50001000",
+      "vm_flags": "0x100071",
+      "views": {
+        "process": "stage-3-process.json",
+        "queue": "stage-3-queue.json",
+        "mapping": "stage-3-mapping.json"
+      }
+    }
+  ]
+}

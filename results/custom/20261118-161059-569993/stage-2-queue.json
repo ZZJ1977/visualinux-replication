@@ -1,0 +1,88 @@
+{
+  "demo_queue": {
+    "name": "demo_queue",
+    "pool": {
+      "boxes": {
+        "0xff11000005e34e40:sock": {
+          "key": "0xff11000005e34e40:sock",
+          "type": "sock",
+          "addr": "0xff11000005e34e40",
+          "label": "receiving socket",
+          "absts": {
+            "default": {
+              "parent": null,
+              "members": {
+                "qlen": {
+                  "class": "text",
+                  "type": "__u32",
+                  "size": 16,
+                  "value": "2"
+                },
+                "first": {
+                  "class": "link",
+                  "type": "DIRECT",
+                  "target": "0xff11000003bcaac0:sk_buff"
+                },
+                "last": {
+                  "class": "link",
+                  "type": "DIRECT",
+                  "target": "0xff11000003bca4c0:sk_buff"
+                }
+              },
+              "distilled": true
+            }
+          },
+          "parent": null
+        },
+        "0xff11000003bcaac0:sk_buff": {
+          "key": "0xff11000003bcaac0:sk_buff",
+          "type": "sk_buff",
+          "addr": "0xff11000003bcaac0",
+          "label": "first packet",
+          "absts": {
+            "default": {
+              "parent": null,
+              "members": {
+                "len": {
+                  "class": "text",
+                  "type": "int",
+                  "size": 16,
+                  "value": "5"
+                }
+              },
+              "distilled": true
+            }
+          },
+          "parent": null
+        },
+        "0xff11000003bca4c0:sk_buff": {
+          "key": "0xff11000003bca4c0:sk_buff",
+          "type": "sk_buff",
+          "addr": "0xff11000003bca4c0",
+          "label": "last packet",
+          "absts": {
+            "default": {
+              "parent": null,
+              "members": {
+                "len": {
+                  "class": "text",
+                  "type": "int",
+                  "size": 16,
+                  "value": "11"
+                }
+              },
+              "distilled": true
+            }
+          },
+          "parent": null
+        }
+      },
+      "containers": {}
+    },
+    "plot": [
+      "0xff11000005e34e40:sock"
+    ],
+    "init_vql": "",
+    "stat": 1
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "method": "Single Codex conversation simulating two prompt stages in order. Responses are first-pass candidates without independent API calls or temperature control. Exact upstream model revision and verbatim user inputs are unavailable, limiting direct comparison.",
+  "sha256": {
+    "inputs": "670a18da43301806f97853d54cf696531f1145266b02bda761194da3bd3962f2",
+    "responses": "e23ef121af6c59874faa4054767c4cd41f7a94d7933a55a9dd3731395482b1ef",
+    "views": "cb680fc94782ce2a435563f0415fdbae5154c736bb90f0c34fa90c8ccbaddfed",
+    "tasks_gdb": "78917e42833c5ad6b8f70f87afbc164753269ca3bc307bdb1d5019bb8f0ce52b"
+  },
+  "summary": {
+    "total": 10,
+    "routed": 10,
+    "parsed": 10,
+    "executed": 7,
+    "fully_verified": 1,
+    "partially_verified": 1,
+    "executed_without_a_verified_goal": 5,
+    "parse_errors": 0,
+    "execution_errors": 3,
+    "unexpected_response_ids": []
+  },
+  "results": {
+    "10": {
+      "view": "textbook_10_task_mm_mt",
+      "status": "partially-verified",
+      "routed": true,
+      "parsed": true,
+      "checks": [
+        {
+          "label": "Maple Tree view",
+          "candidates": 1,
+          "expected": 1,
+          "changed": 1,
+          "missing": [],
+          "extra": [],
+          "status": "verified"
+        },
+        {
+          "label": "slot array collapsed",
+          "candidates": 3,
+          "expected": 3,
+          "changed": 0,
+          "missing": [
+            "0xff11000005ff3a50:Array",
+            "0xff11000003a9b780:Array",
+            "0xff11000005ff0180:Array"
+          ],
+          "extra": [],
+          "status": "mismatch"
+        },
+        {
+          "label": "writable VMA",
+          "candidates": 26,
+          "expected": 16,
+          "changed": 16,
+          "missing": [],
+          "extra": [],
+          "status": "verified"
+        }
+      ],
+      "executed": true
+    },
+    "11": {
+      "view": "textbook_11_task_signal",
+      "status": "execute-error",
+      "routed": true,
+      "parsed": true,
+      "error": "filter should have no suffixes, but [object Object]"
+    },
+    "15": {
+      "view": "textbook_15_bio_example",
+      "status": "not-verified",
+      "routed": true,
+      "parsed": true,
+      "checks": [
+        {
+          "label": "list orientation",
+          "candidates": 2,
+          "expected": 2,
+          "changed": 0,
+          "missing": [
+            "0xff110000052ccbb0:List",
+            "0xffffffff82989e70:List"
+          ],
+          "extra": [],
+          "status": "mismatch"
+        },
+        {
+          "label": "superblock without device collapsed",
+          "candidates": 20,
+          "expected": 19,
+          "changed": 0,
+          "missing": [
+            "0xff11000003868800:super_block",
+            "0xff1100000386e800:super_block",
+            "0xff1100000386a000:super_block",
+            "0xff11000003b10800:super_block",
+            "0xff11000003b98800:super_block",
+            "0xff11000003b9e800:super_block",
+            "0xff11000003b9a000:super_block",
+            "0xff110000042f3800:super_block",
+            "0xff1100000431e800:super_block",
+            "0xff11000004373800:super_block",
+            "0xff11000004375000:super_block",
+            "0xff11000004370800:super_block",
+            "0xff11000004376800:super_block",
+            "0xff11000004625000:super_block",
+            "0xff11000004626800:super_block",
+            "0xff11000004622000:super_block",
+            "0xff11000005ea3800:super_block",
+            "0xff11000005ea6800:super_block",
+            "0xff11000005ea2000:super_block"
+          ],
+          "extra": [],
+          "status": "mismatch"
+        }
+      ],
+      "executed": true
+    },
+    "16": {
+      "view": "textbook_16_file_pagecache",
+      "status": "not-verified",
+      "routed": true,
+      "parsed": true,
+      "checks": [
+        {
+          "label": "page-cache index",
+          "candidates": 7,
+          "expected": 7,
+          "changed": 0,
+          "missing": [
+            "0xff11000003e59210:XArray",
+            "0xff110000058a38a0:XArray",
+            "0xff110000058a1920:XArray",
+            "0xff110000058a3d20:XArray",
+            "0xff110000058a02a0:XArray",
+            "0xff110000058fa6a0:XArray",
+            "0xff11000003ccf788:XArray"
+          ],
+          "extra": [],
+          "status": "mismatch"
+        }
+      ],
+      "executed": true
+    },
+    "17": {
+      "view": "textbook_17_file_mapping",
+      "status": "execute-error",
+      "routed": true,
+      "parsed": true,
+      "error": "filter should have no suffixes, but [object Object]"
+    },
+    "21": {
+      "view": "textbook_21_sockstack",
+      "status": "execute-error",
+      "routed": true,
+      "parsed": true,
+      "error": "filter should have no suffixes, but [object Object]"
+    },
+    "01": {
+      "view": "textbook_01_task_children",
+      "status": "not-verified",
+      "routed": true,
+      "parsed": true,
+      "checks": [
+        {
+          "label": "children view",
+          "candidates": 70,
+          "expected": 70,
+          "changed": 0,
+          "missing": [
+            "0xffffffff8281aa40:task_struct",
+            "0xff11000003b1e040:task_struct",
+            "0xff11000005e79840:task_struct",
+            "0xff11000005e7e040:task_struct",
+            "0xff11000005e78040:task_struct",
+            "0xff11000005f21840:task_struct",
+            "0xff11000005f26040:task_struct",
+            "0xff11000005ef6040:task_struct",
+            "0xff11000005f23040:task_struct",
+            "0xff11000005ef0040:task_struct",
+            "0xff11000005f7c840:task_struct",
+            "0xff11000005f79840:task_struct",
+            "0xff11000005f7e040:task_struct",
+            "0xff11000005f7b040:task_struct",
+            "0xff11000005f83040:task_struct",
+            "0xff11000005f80040:task_struct",
+            "0xff11000005f84840:task_struct",
+            "0xff11000005f81840:task_struct",
+            "0xff11000003b1b040:task_struct",
+            "0xff11000003b18040:task_struct",
+            "0xff11000003b1c840:task_struct",
+            "0xff11000003b19840:task_struct",
+            "0xff11000003b34840:task_struct",
+            "0xff11000003b31840:task_struct",
+            "0xff11000003b36040:task_struct",
+            "0xff11000003b33040:task_struct",
+            "0xff11000003b30040:task_struct",
+            "0xff11000003b3e040:task_struct",
+            "0xff11000003b3b040:task_struct",
+            "0xff11000003b38040:task_struct",
+            "0xff11000003b3c840:task_struct",
+            "0xff11000003b84840:task_struct",
+            "0xff11000003b81840:task_struct",
+            "0xff11000003b86040:task_struct",
+            "0xff11000003b83040:task_struct",
+            "0xff11000003b80040:task_struct",
+            "0xff11000003b8e040:task_struct",
+            "0xff11000003b8b040:task_struct",
+            "0xff11000003b88040:task_struct",
+            "0xff11000003b8c840:task_struct",
+            "0xff11000003b89840:task_struct",
+            "0xff1100000410b040:task_struct",
+            "0xff11000004108040:task_struct",
+            "0xff1100000410c840:task_struct",
+            "0xff11000004109840:task_struct",
+            "0xff1100000410e040:task_struct",
+            "0xff110000041b4840:task_struct",
+            "0xff110000041b1840:task_struct",
+            "0xff110000041b6040:task_struct",
+            "0xff110000041b3040:task_struct",
+            "0xff110000041b0040:task_struct",
+            "0xff1100000403b040:task_struct",
+            "0xff11000004038040:task_struct",
+            "0xff1100000403c840:task_struct",
+            "0xff11000004039840:task_struct",
+            "0xff1100000403e040:task_struct",
+            "0xff1100000462e040:task_struct",
+            "0xff1100000462b040:task_struct",
+            "0xff11000004628040:task_struct",
+            "0xff1100000462c840:task_struct",
+            "0xff11000004629840:task_struct",
+            "0xff11000005c8c840:task_struct",
+            "0xff11000005c89840:task_struct",
+            "0xff11000005c8e040:task_struct",
+            "0xff11000005c8b040:task_struct",
+            "0xff11000005c88040:task_struct",
+            "0xff11000005e7b040:task_struct",
+            "0xff11000005ef1840:task_struct",
+            "0xff11000005ef3040:task_struct",
+            "0xff11000005e7c840:task_struct"
+          ],
+          "extra": [],
+          "status": "mismatch"
+        },
+        {
+          "label": "mm == NULL (GDB)",
+          "candidates": 70,
+          "expected": 54,
+          "changed": 0,
+          "missing": [
+            "0xffffffff8281aa40:task_struct",
+            "0xff11000005f23040:task_struct",
+            "0xff11000003b1b040:task_struct",
+            "0xff11000003b18040:task_struct",
+            "0xff11000003b1c840:task_struct",
+            "0xff11000003b19840:task_struct",
+            "0xff11000003b34840:task_struct",
+            "0xff11000003b31840:task_struct",
+            "0xff11000003b36040:task_struct",
+            "0xff11000003b33040:task_struct",
+            "0xff11000003b30040:task_struct",
+            "0xff11000003b3e040:task_struct",
+            "0xff11000003b3b040:task_struct",
+            "0xff11000003b38040:task_struct",
+            "0xff11000003b3c840:task_struct",
+            "0xff11000003b84840:task_struct",
+            "0xff11000003b81840:task_struct",
+            "0xff11000003b86040:task_struct",
+            "0xff11000003b83040:task_struct",
+            "0xff11000003b80040:task_struct",
+            "0xff11000003b8e040:task_struct",
+            "0xff11000003b8b040:task_struct",
+            "0xff11000003b88040:task_struct",
+            "0xff11000003b8c840:task_struct",
+            "0xff11000003b89840:task_struct",
+            "0xff1100000410b040:task_struct",
+            "0xff11000004108040:task_struct",
+            "0xff1100000410c840:task_struct",
+            "0xff11000004109840:task_struct",
+            "0xff1100000410e040:task_struct",
+            "0xff110000041b4840:task_struct",
+            "0xff110000041b1840:task_struct",
+            "0xff110000041b6040:task_struct",
+            "0xff110000041b3040:task_struct",
+            "0xff110000041b0040:task_struct",
+            "0xff1100000403b040:task_struct",
+            "0xff11000004038040:task_struct",
+            "0xff1100000403c840:task_struct",
+            "0xff11000004039840:task_struct",
+            "0xff1100000403e040:task_struct",
+            "0xff1100000462e040:task_struct",
+            "0xff1100000462b040:task_struct",
+            "0xff11000004628040:task_struct",
+            "0xff1100000462c840:task_struct",
+            "0xff11000004629840:task_struct",
+            "0xff11000005c8c840:task_struct",
+            "0xff11000005c89840:task_struct",
+            "0xff11000005c8e040:task_struct",
+            "0xff11000005c8b040:task_struct",
+            "0xff11000005c88040:task_struct",
+            "0xff11000005e7b040:task_struct",
+            "0xff11000005ef1840:task_struct",
+            "0xff11000005ef3040:task_struct",
+            "0xff11000005e7c840:task_struct"
+          ],
+          "extra": [],
+          "status": "mismatch"
+        }
+      ],
+      "executed": true
+    },
+    "02": {
+      "view": "textbook_02_pid_namespace",
+      "status": "verified",
+      "routed": true,
+      "parsed": true,
+      "checks": [
+        {
+          "label": "PID filter",
+          "candidates": 73,
+          "expected": 72,
+          "changed": 72,
+          "missing": [],
+          "extra": [],
+          "status": "verified"
+        }
+      ],
+      "executed": true
+    },
+    "03": {
+      "view": "textbook_03_idt",
+      "status": "not-verified",
+      "routed": true,
+      "parsed": true,
+      "checks": [
+        {
+          "label": "IRQ without action",
+          "candidates": 16,
+          "expected": 8,
+          "changed": 0,
+          "missing": [
+            "0xff110000038d3800:irq_desc",
+            "0xff110000038d0200:irq_desc",
+            "0xff110000038d5c00:irq_desc",
+            "0xff110000038d6800:irq_desc",
+            "0xff110000038d2000:irq_desc",
+            "0xff11000003a36800:irq_desc",
+            "0xff11000003a32000:irq_desc",
+            "0xff11000003a34400:irq_desc"
+          ],
+          "extra": [],
+          "status": "mismatch"
+        }
+      ],
+      "executed": true
+    },
+    "06": {
+      "view": "textbook_06_cfs_runqueue",
+      "status": "not-verified",
+      "routed": true,
+      "parsed": true,
+      "checks": [
+        {
+          "label": "task scheduling view",
+          "candidates": 12,
+          "expected": 12,
+          "changed": 0,
+          "missing": [
+            "0xff11000005f79840:task_struct",
+            "0xff11000005f81840:task_struct",
+            "0xff11000005e7e040:task_struct",
+            "0xff11000005f7b040:task_struct",
+            "0xff11000005f80040:task_struct",
+            "0xff11000005ef0040:task_struct",
+            "0xff11000005f81840:task_struct(cloned)",
+            "0xff11000005f79840:task_struct(cloned)",
+            "0xff11000005f7b040:task_struct(cloned)",
+            "0xff11000005e7e040:task_struct(cloned)",
+            "0xff11000005f80040:task_struct(cloned)",
+            "0xff11000005ef0040:task_struct(cloned)"
+          ],
+          "extra": [],
+          "status": "mismatch"
+        },
+        {
+          "label": "CFS tree orientation",
+          "candidates": 1,
+          "expected": 1,
+          "changed": 0,
+          "missing": [
+            "0xff1100003ec2a230:RBTree"
+          ],
+          "extra": [],
+          "status": "mismatch"
+        }
+      ],
+      "executed": true
+    }
+  }
+}

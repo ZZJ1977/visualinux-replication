@@ -1,0 +1,133 @@
+{
+  "demo_process": {
+    "name": "demo_process",
+    "pool": {
+      "boxes": {
+        "0xff11000003abe040:task_struct": {
+          "key": "0xff11000003abe040:task_struct",
+          "type": "task_struct",
+          "addr": "0xff11000003abe040",
+          "label": "parent",
+          "absts": {
+            "default": {
+              "parent": null,
+              "members": {
+                "pid": {
+                  "class": "text",
+                  "type": "pid_t",
+                  "size": 16,
+                  "value": "1"
+                },
+                "comm": {
+                  "class": "text",
+                  "type": "char",
+                  "size": 16,
+                  "value": "vl-demo"
+                },
+                "children": {
+                  "class": "link",
+                  "type": "DIRECT",
+                  "target": "0xff11000003abe598:List"
+                }
+              },
+              "distilled": true
+            }
+          },
+          "parent": null
+        },
+        "0xff11000005d39840:task_struct": {
+          "key": "0xff11000005d39840:task_struct",
+          "type": "task_struct",
+          "addr": "0xff11000005d39840",
+          "label": "child #81",
+          "absts": {
+            "default": {
+              "parent": null,
+              "members": {
+                "pid": {
+                  "class": "text",
+                  "type": "pid_t",
+                  "size": 16,
+                  "value": "81"
+                },
+                "comm": {
+                  "class": "text",
+                  "type": "char",
+                  "size": 16,
+                  "value": "demo-anchor"
+                },
+                "ppid": {
+                  "class": "text",
+                  "type": "pid_t",
+                  "size": 16,
+                  "value": "1"
+                }
+              },
+              "distilled": true
+            }
+          },
+          "parent": "0xff11000003abe598:List"
+        },
+        "0xff11000005d3e040:task_struct": {
+          "key": "0xff11000005d3e040:task_struct",
+          "type": "task_struct",
+          "addr": "0xff11000005d3e040",
+          "label": "child #82",
+          "absts": {
+            "default": {
+              "parent": null,
+              "members": {
+                "pid": {
+                  "class": "text",
+                  "type": "pid_t",
+                  "size": 16,
+                  "value": "82"
+                },
+                "comm": {
+                  "class": "text",
+                  "type": "char",
+                  "size": 16,
+                  "value": "demo-new"
+                },
+                "ppid": {
+                  "class": "text",
+                  "type": "pid_t",
+                  "size": 16,
+                  "value": "1"
+                }
+              },
+              "distilled": true
+            }
+          },
+          "parent": "0xff11000003abe598:List"
+        }
+      },
+      "containers": {
+        "0xff11000003abe598:List": {
+          "key": "0xff11000003abe598:List",
+          "label": "children",
+          "members": [
+            {
+              "key": "0xff11000005d39840:task_struct",
+              "links": {
+                "next": "0xff11000005d3e040:task_struct"
+              }
+            },
+            {
+              "key": "0xff11000005d3e040:task_struct",
+              "links": {
+                "next": null
+              }
+            }
+          ],
+          "parent": null
+        }
+      }
+    },
+    "plot": [
+      "0xff11000003abe040:task_struct"
+    ],
+    "init_vql": "",
+    "stat": 1
+  }
+}

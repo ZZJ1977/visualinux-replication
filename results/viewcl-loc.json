@@ -1,0 +1,528 @@
+{
+  "revision": "a12caa77c6a5fb35f6ef0c8d83705f4ba94dc1a3",
+  "zip_sha256": "74a7b62cc83c3f55ed03d5942eb21d7e157378bdcb011fb268053a5ae4f11296",
+  "rows": [
+    {
+      "row": 1,
+      "figure": "3-4",
+      "file": "evaluation/textbook/01_process_parenthood.vcl",
+      "paper_loc": 27,
+      "physical": 39,
+      "blank": 3,
+      "comment_only": 8,
+      "viewcl_nonblank_with_comments": 26,
+      "viewcl_code": 18,
+      "viewql_nonblank": 9,
+      "viewql_line_numbers": [
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        38
+      ],
+      "has_query": true,
+      "imports": [],
+      "closure": [
+        "evaluation/textbook/01_process_parenthood.vcl"
+      ],
+      "closure_viewcl_code": 18
+    },
+    {
+      "row": 2,
+      "figure": "3-6",
+      "file": "evaluation/textbook/02_pidhash.vcl",
+      "paper_loc": 48,
+      "physical": 57,
+      "blank": 5,
+      "comment_only": 0,
+      "viewcl_nonblank_with_comments": 47,
+      "viewcl_code": 47,
+      "viewql_nonblank": 4,
+      "viewql_line_numbers": [
+        53,
+        54,
+        55,
+        56
+      ],
+      "has_query": true,
+      "imports": [
+        "lib/concurrency.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/02_pidhash.vcl",
+        "lib/concurrency.vcl"
+      ],
+      "closure_viewcl_code": 79
+    },
+    {
+      "row": 3,
+      "figure": "4-5",
+      "file": "evaluation/textbook/03_irq_desc.vcl",
+      "paper_loc": 59,
+      "physical": 70,
+      "blank": 7,
+      "comment_only": 6,
+      "viewcl_nonblank_with_comments": 58,
+      "viewcl_code": 52,
+      "viewql_nonblank": 4,
+      "viewql_line_numbers": [
+        66,
+        67,
+        68,
+        69
+      ],
+      "has_query": true,
+      "imports": [
+        "lib/concurrency.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/03_irq_desc.vcl",
+        "lib/concurrency.vcl"
+      ],
+      "closure_viewcl_code": 84
+    },
+    {
+      "row": 4,
+      "figure": "6-1",
+      "file": "evaluation/textbook/05_timing.vcl",
+      "paper_loc": 46,
+      "physical": 49,
+      "blank": 4,
+      "comment_only": 0,
+      "viewcl_nonblank_with_comments": 45,
+      "viewcl_code": 45,
+      "viewql_nonblank": 0,
+      "viewql_line_numbers": [],
+      "has_query": false,
+      "imports": [
+        "lib/concurrency.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/05_timing.vcl",
+        "lib/concurrency.vcl"
+      ],
+      "closure_viewcl_code": 77
+    },
+    {
+      "row": 5,
+      "figure": "7-1",
+      "file": "evaluation/textbook/06_scheduling.vcl",
+      "paper_loc": 35,
+      "physical": 53,
+      "blank": 4,
+      "comment_only": 0,
+      "viewcl_nonblank_with_comments": 42,
+      "viewcl_code": 42,
+      "viewql_nonblank": 6,
+      "viewql_line_numbers": [
+        45,
+        46,
+        48,
+        49,
+        51,
+        52
+      ],
+      "has_query": true,
+      "imports": [],
+      "closure": [
+        "evaluation/textbook/06_scheduling.vcl"
+      ],
+      "closure_viewcl_code": 42
+    },
+    {
+      "row": 6,
+      "figure": "8-2",
+      "file": "evaluation/textbook/07_buddy_system.vcl",
+      "paper_loc": 64,
+      "physical": 73,
+      "blank": 8,
+      "comment_only": 14,
+      "viewcl_nonblank_with_comments": 65,
+      "viewcl_code": 51,
+      "viewql_nonblank": 0,
+      "viewql_line_numbers": [],
+      "has_query": false,
+      "imports": [
+        "lib/utils.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/07_buddy_system.vcl",
+        "lib/utils.vcl"
+      ],
+      "closure_viewcl_code": 54
+    },
+    {
+      "row": 7,
+      "figure": "8-4",
+      "file": "evaluation/textbook/08-09_slab.vcl",
+      "paper_loc": 102,
+      "physical": 109,
+      "blank": 7,
+      "comment_only": 28,
+      "viewcl_nonblank_with_comments": 102,
+      "viewcl_code": 74,
+      "viewql_nonblank": 0,
+      "viewql_line_numbers": [],
+      "has_query": false,
+      "imports": [],
+      "closure": [
+        "evaluation/textbook/08-09_slab.vcl"
+      ],
+      "closure_viewcl_code": 74
+    },
+    {
+      "row": 8,
+      "figure": "9-2",
+      "file": "evaluation/textbook/10_addrspace.vcl",
+      "paper_loc": 145,
+      "physical": 160,
+      "blank": 10,
+      "comment_only": 0,
+      "viewcl_nonblank_with_comments": 141,
+      "viewcl_code": 141,
+      "viewql_nonblank": 8,
+      "viewql_line_numbers": [
+        150,
+        151,
+        153,
+        154,
+        156,
+        157,
+        158,
+        159
+      ],
+      "has_query": true,
+      "imports": [
+        "lib/concurrency.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/10_addrspace.vcl",
+        "lib/concurrency.vcl"
+      ],
+      "closure_viewcl_code": 173
+    },
+    {
+      "row": 9,
+      "figure": "11-1",
+      "file": "evaluation/textbook/11_signals.vcl",
+      "paper_loc": 71,
+      "physical": 80,
+      "blank": 5,
+      "comment_only": 5,
+      "viewcl_nonblank_with_comments": 70,
+      "viewcl_code": 65,
+      "viewql_nonblank": 4,
+      "viewql_line_numbers": [
+        76,
+        77,
+        78,
+        79
+      ],
+      "has_query": true,
+      "imports": [],
+      "closure": [
+        "evaluation/textbook/11_signals.vcl"
+      ],
+      "closure_viewcl_code": 65
+    },
+    {
+      "row": 10,
+      "figure": "12-3",
+      "file": "evaluation/textbook/13_fd_array.vcl",
+      "paper_loc": 55,
+      "physical": 59,
+      "blank": 4,
+      "comment_only": 0,
+      "viewcl_nonblank_with_comments": 55,
+      "viewcl_code": 55,
+      "viewql_nonblank": 0,
+      "viewql_line_numbers": [],
+      "has_query": false,
+      "imports": [],
+      "closure": [
+        "evaluation/textbook/13_fd_array.vcl"
+      ],
+      "closure_viewcl_code": 55
+    },
+    {
+      "row": 11,
+      "figure": "13-3",
+      "file": "evaluation/textbook/14_kernfs.vcl",
+      "paper_loc": 55,
+      "physical": 50,
+      "blank": 3,
+      "comment_only": 5,
+      "viewcl_nonblank_with_comments": 44,
+      "viewcl_code": 39,
+      "viewql_nonblank": 2,
+      "viewql_line_numbers": [
+        48,
+        49
+      ],
+      "has_query": true,
+      "imports": [
+        "evaluation/textbook/14-15_kobject.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/14-15_kobject.vcl",
+        "evaluation/textbook/14_kernfs.vcl"
+      ],
+      "closure_viewcl_code": 50
+    },
+    {
+      "row": 12,
+      "figure": "14-3",
+      "file": "evaluation/textbook/15_bio.vcl",
+      "paper_loc": 75,
+      "physical": 93,
+      "blank": 11,
+      "comment_only": 0,
+      "viewcl_nonblank_with_comments": 75,
+      "viewcl_code": 75,
+      "viewql_nonblank": 6,
+      "viewql_line_numbers": [
+        86,
+        87,
+        89,
+        90,
+        91,
+        92
+      ],
+      "has_query": true,
+      "imports": [
+        "evaluation/textbook/14-15_kobject.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/14-15_kobject.vcl",
+        "evaluation/textbook/15_bio.vcl"
+      ],
+      "closure_viewcl_code": 86
+    },
+    {
+      "row": 13,
+      "figure": "15-1",
+      "file": "evaluation/textbook/16_pagecache.vcl",
+      "paper_loc": 70,
+      "physical": 77,
+      "blank": 5,
+      "comment_only": 5,
+      "viewcl_nonblank_with_comments": 69,
+      "viewcl_code": 64,
+      "viewql_nonblank": 2,
+      "viewql_line_numbers": [
+        75,
+        76
+      ],
+      "has_query": true,
+      "imports": [
+        "lib/concurrency.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/16_pagecache.vcl",
+        "lib/concurrency.vcl"
+      ],
+      "closure_viewcl_code": 96
+    },
+    {
+      "row": 14,
+      "figure": "16-2",
+      "file": "evaluation/textbook/17_file_mapping.vcl",
+      "paper_loc": 53,
+      "physical": 61,
+      "blank": 4,
+      "comment_only": 0,
+      "viewcl_nonblank_with_comments": 52,
+      "viewcl_code": 52,
+      "viewql_nonblank": 4,
+      "viewql_line_numbers": [
+        57,
+        58,
+        59,
+        60
+      ],
+      "has_query": true,
+      "imports": [
+        "lib/concurrency.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/17_file_mapping.vcl",
+        "lib/concurrency.vcl"
+      ],
+      "closure_viewcl_code": 84
+    },
+    {
+      "row": 15,
+      "figure": "17-1",
+      "file": "evaluation/textbook/18_anon_rev.vcl",
+      "paper_loc": 154,
+      "physical": 161,
+      "blank": 8,
+      "comment_only": 10,
+      "viewcl_nonblank_with_comments": 153,
+      "viewcl_code": 143,
+      "viewql_nonblank": 0,
+      "viewql_line_numbers": [],
+      "has_query": false,
+      "imports": [
+        "lib/concurrency.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/18_anon_rev.vcl",
+        "lib/concurrency.vcl"
+      ],
+      "closure_viewcl_code": 175
+    },
+    {
+      "row": 16,
+      "figure": "17-6",
+      "file": "evaluation/textbook/19_swap_area.vcl",
+      "paper_loc": 19,
+      "physical": 19,
+      "blank": 2,
+      "comment_only": 0,
+      "viewcl_nonblank_with_comments": 17,
+      "viewcl_code": 17,
+      "viewql_nonblank": 0,
+      "viewql_line_numbers": [],
+      "has_query": false,
+      "imports": [
+        "evaluation/textbook/15_bio.vcl",
+        "evaluation/textbook/12_proc_and_vfs.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/12_proc_and_vfs.vcl",
+        "evaluation/textbook/14-15_kobject.vcl",
+        "evaluation/textbook/15_bio.vcl",
+        "evaluation/textbook/19_swap_area.vcl"
+      ],
+      "closure_viewcl_code": 194
+    },
+    {
+      "row": 17,
+      "figure": "19-1",
+      "file": "evaluation/textbook/20_ipc_ns.vcl",
+      "paper_loc": 126,
+      "physical": 55,
+      "blank": 3,
+      "comment_only": 4,
+      "viewcl_nonblank_with_comments": 52,
+      "viewcl_code": 48,
+      "viewql_nonblank": 0,
+      "viewql_line_numbers": [],
+      "has_query": false,
+      "imports": [
+        "lib/utils.vcl",
+        "lib/concurrency.vcl",
+        "evaluation/textbook/20_sysv.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/12_proc_and_vfs.vcl",
+        "evaluation/textbook/20_ipc_ns.vcl",
+        "evaluation/textbook/20_sysv.vcl",
+        "lib/concurrency.vcl",
+        "lib/utils.vcl"
+      ],
+      "closure_viewcl_code": 246
+    },
+    {
+      "row": 18,
+      "figure": "19-2",
+      "file": "evaluation/textbook/20_ipc_ns.vcl",
+      "paper_loc": null,
+      "physical": 55,
+      "blank": 3,
+      "comment_only": 4,
+      "viewcl_nonblank_with_comments": 52,
+      "viewcl_code": 48,
+      "viewql_nonblank": 0,
+      "viewql_line_numbers": [],
+      "has_query": false,
+      "imports": [
+        "lib/utils.vcl",
+        "lib/concurrency.vcl",
+        "evaluation/textbook/20_sysv.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/12_proc_and_vfs.vcl",
+        "evaluation/textbook/20_ipc_ns.vcl",
+        "evaluation/textbook/20_sysv.vcl",
+        "lib/concurrency.vcl",
+        "lib/utils.vcl"
+      ],
+      "closure_viewcl_code": 246
+    },
+    {
+      "row": 19,
+      "figure": "工作队列",
+      "file": "evaluation/textbook/04_workqueue.vcl",
+      "paper_loc": 89,
+      "physical": 95,
+      "blank": 7,
+      "comment_only": 9,
+      "viewcl_nonblank_with_comments": 88,
+      "viewcl_code": 79,
+      "viewql_nonblank": 0,
+      "viewql_line_numbers": [],
+      "has_query": false,
+      "imports": [],
+      "closure": [
+        "evaluation/textbook/04_workqueue.vcl"
+      ],
+      "closure_viewcl_code": 79
+    },
+    {
+      "row": 20,
+      "figure": "进程到 VFS",
+      "file": "evaluation/textbook/12_proc_and_vfs.vcl",
+      "paper_loc": 96,
+      "physical": 102,
+      "blank": 7,
+      "comment_only": 4,
+      "viewcl_nonblank_with_comments": 95,
+      "viewcl_code": 91,
+      "viewql_nonblank": 0,
+      "viewql_line_numbers": [],
+      "has_query": false,
+      "imports": [],
+      "closure": [
+        "evaluation/textbook/12_proc_and_vfs.vcl"
+      ],
+      "closure_viewcl_code": 91
+    },
+    {
+      "row": 21,
+      "figure": "套接字",
+      "file": "evaluation/textbook/21_socket.vcl",
+      "paper_loc": 92,
+      "physical": 110,
+      "blank": 9,
+      "comment_only": 3,
+      "viewcl_nonblank_with_comments": 92,
+      "viewcl_code": 89,
+      "viewql_nonblank": 8,
+      "viewql_line_numbers": [
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ],
+      "has_query": true,
+      "imports": [
+        "lib/concurrency.vcl"
+      ],
+      "closure": [
+        "evaluation/textbook/21_socket.vcl",
+        "lib/concurrency.vcl"
+      ],
+      "closure_viewcl_code": 121
+    }
+  ]
+}

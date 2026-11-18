@@ -1,0 +1,208 @@
+{
+  "run": "20261118-192607-978304",
+  "pagecache": {
+    "definition": "Local operational cutoff, inclusive; the paper supplies no numeric threshold.",
+    "mappings": [
+      {
+        "address_space": "0xff11000003ea1898:address_space",
+        "index": "0xff11000003ea18a0:XArray",
+        "pages": 0
+      },
+      {
+        "address_space": "0xff110000057e3898:address_space",
+        "index": "0xff110000057e38a0:XArray",
+        "pages": 0
+      },
+      {
+        "address_space": "0xff110000057e2698:address_space",
+        "index": "0xff110000057e26a0:XArray",
+        "pages": 0
+      },
+      {
+        "address_space": "0xff110000057e0b98:address_space",
+        "index": "0xff110000057e0ba0:XArray",
+        "pages": 0
+      },
+      {
+        "address_space": "0xff110000057e1018:address_space",
+        "index": "0xff110000057e1020:XArray",
+        "pages": 0
+      },
+      {
+        "address_space": "0xff110000058f7898:address_space",
+        "index": "0xff110000058f78a0:XArray",
+        "pages": 0
+      },
+      {
+        "address_space": "0xff11000003ccb420:address_space",
+        "index": "0xff11000003ccb428:XArray",
+        "pages": 125
+      }
+    ],
+    "original_query": "\n    i_pages = SELECT address_space->i_pages FROM *\n    UPDATE i_pages WITH shrinked: true\n",
+    "original_vs_threshold": {
+      "expected": [
+        "0xff11000003ccb428:XArray"
+      ],
+      "actual": [
+        "0xff11000003ccb428:XArray",
+        "0xff11000003ea18a0:XArray",
+        "0xff110000057e0ba0:XArray",
+        "0xff110000057e1020:XArray",
+        "0xff110000057e26a0:XArray",
+        "0xff110000057e38a0:XArray",
+        "0xff110000058f78a0:XArray"
+      ],
+      "missing": [],
+      "extra": [
+        "0xff11000003ea18a0:XArray",
+        "0xff110000057e0ba0:XArray",
+        "0xff110000057e1020:XArray",
+        "0xff110000057e26a0:XArray",
+        "0xff110000057e38a0:XArray",
+        "0xff110000058f78a0:XArray"
+      ],
+      "matches": false
+    },
+    "strict": {
+      "threshold_pages": 64,
+      "query": "large = SELECT address_space FROM * WHERE nrpages >= 64\nindexes = SELECT address_space->i_pages FROM large\nUPDATE indexes WITH shrinked: true",
+      "expected": [
+        "0xff11000003ccb428:XArray"
+      ],
+      "actual": [
+        "0xff11000003ccb428:XArray"
+      ],
+      "missing": [],
+      "extra": [],
+      "matches": true
+    },
+    "observed_boundary": [
+      {
+        "threshold_pages": 124,
+        "query": "large = SELECT address_space FROM * WHERE nrpages >= 124\nindexes = SELECT address_space->i_pages FROM large\nUPDATE indexes WITH shrinked: true",
+        "expected": [
+          "0xff11000003ccb428:XArray"
+        ],
+        "actual": [
+          "0xff11000003ccb428:XArray"
+        ],
+        "missing": [],
+        "extra": [],
+        "matches": true
+      },
+      {
+        "threshold_pages": 125,
+        "query": "large = SELECT address_space FROM * WHERE nrpages >= 125\nindexes = SELECT address_space->i_pages FROM large\nUPDATE indexes WITH shrinked: true",
+        "expected": [
+          "0xff11000003ccb428:XArray"
+        ],
+        "actual": [
+          "0xff11000003ccb428:XArray"
+        ],
+        "missing": [],
+        "extra": [],
+        "matches": true
+      },
+      {
+        "threshold_pages": 126,
+        "query": "large = SELECT address_space FROM * WHERE nrpages >= 126\nindexes = SELECT address_space->i_pages FROM large\nUPDATE indexes WITH shrinked: true",
+        "expected": [],
+        "actual": [],
+        "missing": [],
+        "extra": [],
+        "matches": true
+      }
+    ]
+  },
+  "file_mapping": {
+    "files": [
+      {
+        "file": "0xff11000005136200:file",
+        "tree": "0xff110000057e1090:RBTree",
+        "members": 0,
+        "no_file_mappings": true
+      },
+      {
+        "file": "0xff11000005136900:file",
+        "tree": "0xff110000058f7910:RBTree",
+        "members": 0,
+        "no_file_mappings": true
+      },
+      {
+        "file": "0xff11000005137000:file",
+        "tree": "0xff110000057e2710:RBTree",
+        "members": 0,
+        "no_file_mappings": true
+      },
+      {
+        "file": "0xff110000051371c0:file",
+        "tree": "0xff110000057e0c10:RBTree",
+        "members": 0,
+        "no_file_mappings": true
+      },
+      {
+        "file": "0xff11000005137a80:file",
+        "tree": "0xff11000003ea1910:RBTree",
+        "members": 0,
+        "no_file_mappings": true
+      },
+      {
+        "file": "0xff11000005137c40:file",
+        "tree": "0xff110000057e3910:RBTree",
+        "members": 0,
+        "no_file_mappings": true
+      },
+      {
+        "file": "0xff11000005137e00:file",
+        "tree": "0xff11000003ccb498:RBTree",
+        "members": 4,
+        "no_file_mappings": false
+      }
+    ],
+    "original_query": "\n    file_no_mapping = SELECT file\n        FROM *\n        WHERE file_mapping == \"(empty)\"\n    UPDATE file_no_mapping WITH shrinked: true\n",
+    "original": {
+      "expected": [
+        "0xff11000005136200:file",
+        "0xff11000005136900:file",
+        "0xff11000005137000:file",
+        "0xff110000051371c0:file",
+        "0xff11000005137a80:file",
+        "0xff11000005137c40:file"
+      ],
+      "actual": [],
+      "missing": [
+        "0xff11000005136200:file",
+        "0xff11000005136900:file",
+        "0xff11000005137000:file",
+        "0xff110000051371c0:file",
+        "0xff11000005137a80:file",
+        "0xff11000005137c40:file"
+      ],
+      "extra": [],
+      "matches": false
+    },
+    "strict_query": "\n    file_no_mapping = SELECT file\n        FROM *\n        WHERE no_file_mappings == true\n    UPDATE file_no_mapping WITH shrinked: true\n",
+    "strict": {
+      "expected": [
+        "0xff11000005136200:file",
+        "0xff11000005136900:file",
+        "0xff11000005137000:file",
+        "0xff110000051371c0:file",
+        "0xff11000005137a80:file",
+        "0xff11000005137c40:file"
+      ],
+      "actual": [
+        "0xff11000005136200:file",
+        "0xff11000005136900:file",
+        "0xff11000005137000:file",
+        "0xff110000051371c0:file",
+        "0xff11000005137a80:file",
+        "0xff11000005137c40:file"
+      ],
+      "missing": [],
+      "extra": [],
+      "matches": true
+    }
+  }
+}
